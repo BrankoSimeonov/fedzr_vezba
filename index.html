@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <style>
 
         * {
@@ -32,6 +33,7 @@
           border:1px solid black;
         background-repeat: no-repeat;
         background-position: bottom; 
+        font-family: 'Roboto Condensed', sans-serif;
         
       }
       .navigacija {
@@ -43,8 +45,7 @@
           grid-area: sadrzaj;
           border:1px solid black;
         display: grid;
-        justify-content: center;
-        align-content: center;
+     align-content: flex-end;
        
       }
     
@@ -111,13 +112,21 @@
     display: inline-block;
 }
 
+#naslov {
+    justify-content: right;
+}
 
+#headertext {
+color:gray;
+}
 
     </style>
 </head>
 <body>
         <div class="grid">
-                <div class="zaglavlje"><img src="pyramid.png"></div>
+                <div class="zaglavlje"><h1>Ime i Prezime</h1>
+                    <p id="headertext">Front end developer</p>
+                </div>
                 <div class="navigacija">
                     <ul>
                         <li><a href="#"><span>Stavka 1</span></a></li>
@@ -131,7 +140,7 @@
                 <div class="levakolona">Leva kolona</div>
                 <div class="sadrzaj">
                         <div id="container2">
-                            <h1>O MENI</h1>
+                            <h1 id="naslov">O MENI</h1>
                             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt aspernatur aliquam commodi blanditiis doloribus eligendi placeat porro atque veritatis mollitia, voluptatem velit nobis quae, aperiam tempora consequatur? Tempora aut, doloremque doloribus atque fugiat fuga quod neque vitae temporibus nulla porro sunt suscipit quisquam fugit placeat veritatis nisi aperiam possimus voluptatem maxime nihil, itaque nam. Repellendus odit neque voluptas exercitationem dolor, dolore iure deserunt nulla odio quos nobis, praesentium voluptatibus totam sapiente est labore maiores reiciendis voluptatum? Voluptas maxime, odit, vel eligendi eius, voluptatem odio facilis quasi tempore recusandae quo earum animi itaque inventore consequuntur vero aliquam aliquid! Quod, fugiat. Officia doloremque maiores obcaecati. A amet distinctio, numquam quae veniam corporis accusantium, soluta maiores quia deleniti esse ad eveniet ipsum nulla debitis excepturi repudiandae. Veritatis, officiis necessitatibus tempore amet facere incidunt voluptatibus reprehenderit autem laudantium eaque recusandae ducimus exercitationem suscipit, voluptas quisquam magnam corrupti dignissimos mollitia! Delectus sequi consequatur harum mollitia perspiciatis est doloribus consectetur, eveniet illo quae deleniti tempora cumque a omnis. Reprehenderit eum quos dolor, voluptate qui in! Vitae nam fugiat quasi accusamus non assumenda, debitis asperiores veritatis deserunt dolor a maiores consequuntur recusandae voluptatum minima nostrum eius, obcaecati commodi rem. Voluptates, eligendi explicabo. Nemo et unde exercitationem magnam ullam cupiditate alias eligendi reprehenderit nesciunt quia nostrum fugiat dolor odio in officia veritatis voluptates nulla, laborum sint culpa! Placeat, necessitatibus eligendi! Nobis, odit officia nihil iste dolores neque corporis placeat dolorum molestiae aperiam repellat fugiat itaque voluptatum veniam exercitationem saepe tempora libero ipsa, nesciunt, vero sequi sint illum similique ullam. Illo facilis minus odio sint. Unde dolor quae pariatur nam beatae modi, eum excepturi in corrupti fugit cumque itaque, praesentium odit ab vel deserunt possimus officia maiores quod dignissimos, quas minima delectus? Asperiores magni quae perferendis dolores itaque, ipsa odit modi assumenda laboriosam sed velit culpa possimus corrupti.</P>
                               
                                 </div>
