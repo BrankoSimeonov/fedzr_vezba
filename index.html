@@ -14,8 +14,8 @@
 }
 
         .grid {
-            border-left:2px black;
-            border-right:2px black;
+            border-left:1px solid black;
+            border-right:1px solid black;
             display:grid;
             grid-template-columns: auto auto auto auto auto auto;
             grid-template-areas: 
@@ -30,7 +30,6 @@
         }
         .zaglavlje {
           grid-area: zaglavlje;
-          border:1px solid black;
         background-repeat: no-repeat;
         background-position: bottom; 
         font-family: 'Roboto Condensed', sans-serif;
@@ -41,24 +40,35 @@
       }
       .navigacija {
           grid-area: navigacija;
-          border:1px solid black;
           background-color: black;
+          position: relative;
+        display: inline-block;
       }
       .sadrzaj {
           grid-area: sadrzaj;
-          border:1px solid black;
+        
         display: grid;
-     align-content: flex-end;
-       
       }
-    
+      
+      #container2 {
+       padding:30px;
+        align-content: center;
+        justify-content: center;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px 50px;
+        
+    }
+
+
       .podnozje {
           grid-area: podnozje;
-          border:1px solid black;
+          border-top: 1px solid black;
       }
       .levakolona {
           grid-area: levakolona;
-          border:1px solid black;
+          border-right: 1px solid black;
+          
       }
       /**/
       ul {
@@ -96,29 +106,7 @@
     }
 
     /**/
-    #container2 {
-        padding-top: 70px;
-        padding-bottom: 30px;
-        align-content: center;
-        justify-content: center;
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-gap: 50px 50px;
-        
-    }
 
-  
-   
-
-/* The container <div> - needed to position the dropdown content */
-.navigacija {
-    position: relative;
-    display: inline-block;
-}
-
-#naslov {
-    justify-content: right;
-}
 
 #headertext {
 color:gray;
@@ -152,7 +140,7 @@ color:gray;
                 <div class="sadrzaj">
                         <div id="container2">
                             <h1 id="naslov">O MENI</h1>
-                            <P id="lorem"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt aspernatur aliquam commodi blanditiis doloribus eligendi placeat porro atque veritatis mollitia, voluptatem velit nobis quae, aperiam tempora consequatur? Tempora aut, doloremque doloribus atque fugiat fuga quod neque vitae temporibus nulla porro sunt suscipit quisquam fugit placeat veritatis nisi aperiam possimus voluptatem maxime nihil, itaque nam. Repellendus odit neque voluptas exercitationem dolor, dolore iure deserunt nulla odio quos nobis, praesentium voluptatibus totam sapiente est labore maiores reiciendis voluptatum? Voluptas maxime, odit, vel eligendi eius, voluptatem odio facilis quasi tempore recusandae quo earum animi itaque inventore consequuntur vero aliquam aliquid! Quod, fugiat. Officia doloremque maiores obcaecati. A amet distinctio, numquam quae veniam corporis accusantium, soluta maiores quia deleniti esse ad eveniet ipsum nulla debitis excepturi repudiandae. Veritatis, officiis necessitatibus tempore amet facere incidunt voluptatibus reprehenderit autem laudantium eaque recusandae ducimus exercitationem suscipit, voluptas quisquam magnam corrupti dignissimos mollitia! Delectus sequi consequatur harum mollitia perspiciatis est doloribus consectetur, eveniet illo quae deleniti tempora cumque a omnis. Reprehenderit eum quos dolor, voluptate qui in! Vitae nam fugiat quasi accusamus non assumenda, debitis asperiores veritatis deserunt dolor a maiores consequuntur recusandae voluptatum minima nostrum eius, obcaecati commodi rem. Voluptates, eligendi explicabo. Nemo et unde exercitationem magnam ullam cupiditate alias eligendi reprehenderit nesciunt quia nostrum fugiat dolor odio in officia veritatis voluptates nulla, laborum sint culpa! Placeat, necessitatibus eligendi! Nobis, odit officia nihil iste dolores neque corporis placeat dolorum molestiae aperiam repellat fugiat itaque voluptatum veniam exercitationem saepe tempora libero ipsa, nesciunt, vero sequi sint illum similique ullam. Illo facilis minus odio sint. Unde dolor quae pariatur nam beatae modi, eum excepturi in corrupti fugit cumque itaque, praesentium odit ab vel deserunt possimus officia maiores quod dignissimos, quas minima delectus? Asperiores magni quae perferendis dolores itaque, ipsa odit modi assumenda laboriosam sed velit culpa possimus corrupti.</b></P>
+                            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt aspernatur aliquam commodi blanditiis doloribus eligendi placeat porro atque veritatis mollitia, voluptatem velit nobis quae, aperiam tempora consequatur? Tempora aut, doloremque doloribus atque fugiat fuga quod neque vitae temporibus nulla porro sunt suscipit quisquam fugit placeat veritatis nisi aperiam possimus voluptatem maxime nihil, itaque nam. Repellendus odit neque voluptas exercitationem dolor, dolore iure deserunt nulla odio quos nobis, praesentium voluptatibus totam sapiente est labore maiores reiciendis voluptatum? Voluptas maxime, odit, vel eligendi eius, voluptatem odio facilis quasi tempore recusandae quo earum animi itaque inventore consequuntur vero aliquam aliquid! Quod, fugiat. Officia doloremque maiores obcaecati. A amet distinctio, numquam quae veniam corporis accusantium, soluta maiores quia deleniti esse ad eveniet ipsum nulla debitis excepturi repudiandae. Veritatis, officiis necessitatibus tempore amet facere incidunt voluptatibus reprehenderit autem laudantium eaque recusandae ducimus exercitationem suscipit, voluptas quisquam magnam corrupti dignissimos mollitia! Delectus sequi consequatur harum mollitia perspiciatis est doloribus consectetur, eveniet illo quae deleniti tempora cumque a omnis. Reprehenderit eum quos dolor, voluptate qui in! Vitae nam fugiat quasi accusamus non assumenda, debitis asperiores veritatis deserunt dolor a maiores consequuntur recusandae voluptatum minima nostrum eius, obcaecati commodi rem. Voluptates, eligendi explicabo. Nemo et unde exercitationem magnam ullam cupiditate alias eligendi reprehenderit nesciunt quia nostrum fugiat dolor odio in officia veritatis voluptates nulla, laborum sint culpa! Placeat, necessitatibus eligendi! Nobis, odit officia nihil iste dolores neque corporis placeat dolorum molestiae aperiam repellat fugiat itaque voluptatum veniam exercitationem saepe tempora libero ipsa, nesciunt, vero sequi sint illum similique ullam. Illo facilis minus odio sint. Unde dolor quae pariatur nam beatae modi, eum excepturi in corrupti fugit cumque itaque, praesentium odit ab vel deserunt possimus officia maiores quod dignissimos, quas minima delectus? Asperiores magni quae perferendis dolores itaque, ipsa odit modi assumenda laboriosam sed velit culpa possimus corrupti</p>
                               
                                 </div>
                 </div>
